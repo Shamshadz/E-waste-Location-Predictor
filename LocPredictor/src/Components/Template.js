@@ -3,8 +3,10 @@ import SignupForm from "./SignupForm";
 import LoginForm from "./LoginForm";
 import frameImage from "../assets/frame.png";
 import { FcGoogle } from "react-icons/fc";
+import LoginPageAnimation from "../assets/animations/LoginMap";
+import SignUpPageAnimation from "../assets/animations/SignUpMap";
 
-const Template = ({ title, desc1, desc2, image, formtype, setIsLoggedIn }) => {
+const Template = ({ title, desc1, desc2, image, loginPage, formtype, setIsLoggedIn }) => {
   return (
     <div className="flex w-11/12 max-w-[1160px] justify-between py-12  gap-x-14 gap-y-0 mx-auto mt-5">
       <div className="flex flex-col justify-start w-[500px]">
@@ -36,7 +38,7 @@ const Template = ({ title, desc1, desc2, image, formtype, setIsLoggedIn }) => {
         </div>
       </div>
       <div className="relative flex w-[520px] h-[500px]">
-        <img
+        {/* <img
           src={frameImage}
           alt="pattern"
           width={558}
@@ -51,7 +53,8 @@ const Template = ({ title, desc1, desc2, image, formtype, setIsLoggedIn }) => {
           height={490}
           loading="lazy"
           className="relative  "
-        ></img>
+        ></img> */}
+        {loginPage ? <LoginPageAnimation /> : <SignUpPageAnimation />}
       </div>
     </div>
   );
