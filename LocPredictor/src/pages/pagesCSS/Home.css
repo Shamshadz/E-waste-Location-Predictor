@@ -12,15 +12,21 @@
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-}
-
-.siteInfo p {
   width: 40rem;
   margin: auto;
-  border: 1px solid #70ddff;
+  /* border: 1px solid #70ddff; */
   border-radius: 1em;
   padding: 2em 1em 2em 1em;
   background-color: #70ddff;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(39, 39, 60, 0.6727065826330532) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.siteInfo p {
   color: black;
   font-weight: 400;
   font-size: 1.2em;
