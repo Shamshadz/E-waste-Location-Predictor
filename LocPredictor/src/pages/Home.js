@@ -5,6 +5,7 @@ import HomePageAnimation1 from "../assets/animations/HomePage1.jsx";
 import HomePageAnimation2 from "../assets/animations/HomePage2.jsx";
 import HomePageAnimation3 from "../assets/animations/HomePage3.jsx";
 import HomePageAnimation4 from "../assets/animations/HomePage4.jsx";
+import RecyclePageAnimation from "../assets/animations/Recycle.jsx";
 
 function Home() {
   return (
@@ -13,17 +14,23 @@ function Home() {
         <div className="renderMapDiv">
           <RenderMap />
           <div className="siteInfo">
-            <p>Welcome to our innovative online platform dedicated to revolutionizing the
-              way we handle electronic waste (e-waste). Our website is your go-to destination
-              for locating convenient e-waste disposal points and,
-              as an extra incentive, rewarding you based on the value of the materials
-              you recycle. </p>
+            <div className="siteInfo-anime">
+              <RecyclePageAnimation />
+            </div>
+            <div className="siteInfo-para">
+              <p>Welcome to our innovative online platform dedicated to revolutionizing the
+                way we handle electronic waste (e-waste). Our website is your go-to destination
+                for locating convenient e-waste disposal points and,
+                as an extra incentive, rewarding you based on the value of the materials
+                you recycle. </p>
+            </div>
           </div>
         </div>
+        <div className="homeDiv-Moto">Recycle E-Waste To Save Planet For Better Future. And Earn Reward.</div>
         <article className="homeDiv-article">
           <div className="article-odd">
             <div className="article-odd-info-div" >
-              <h2>Locate and Dispose with Ease::</h2>
+              <h2>Locate and Dispose with Ease ::</h2>
               <p>
                 Our user-friendly website provides an extensive database of verified e-waste
                 collection centers and recycling facilities near you. Whether you have old
@@ -38,8 +45,11 @@ function Home() {
           </div>
           {/* -------------------------------------------- */}
           <div className="article-even">
+            <div className="article-even-anime-div" >
+              <HomePageAnimation1 />
+            </div>
             <div className="article-even-info-div" >
-              <h2>Earn Rewards for Responsible Recycling:</h2>
+              <h2>Earn Rewards for Responsible Recycling ::</h2>
               <p>
                 Incentivizing responsible e-waste disposal, we offer a unique rewards program.
                 You can earn rewards points based on the recyclable materials' value contained
@@ -48,14 +58,11 @@ function Home() {
                 It's our way of thanking you for being an eco-conscious citizen.
               </p>
             </div>
-            <div className="article-even-anime-div" >
-              <HomePageAnimation1 />
-            </div>
           </div>
           {/* -------------------------------------------- */}
           <div className="article-odd">
             <div className="article-odd-info-div" >
-              <h2>Environmental Responsibility:</h2>
+              <h2>Environmental Responsibility ::</h2>
               <p>
                 At the heart of our platform lies a deep commitment to environmental sustainability.
                 By using our services, you actively contribute to reducing electronic waste in landfills
@@ -69,9 +76,7 @@ function Home() {
           </div>
         </article>
       </div>
-      <div className="" >
-        <Footer />
-      </div>
+
     </>
   );
 }

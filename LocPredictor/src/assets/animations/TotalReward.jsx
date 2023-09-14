@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import lottie from 'lottie-web';
-import animationData from './homePage2.json'; // Replace with the path to your animation JSON file
+import animationData from './totalReward.json'; // Replace with the path to your animation JSON file
 
-const HomePageAnimation2 = () => {
+const TotalRewardBadeAnimation = () => {
     useEffect(() => {
         // Find the DOM element where you want to render the animation
-        const container = document.getElementById('lottie-container-responsibility');
+        const container = document.getElementById('lottie-container-total-reward-badge');
 
         // Initialize the Lottie animation
         const anim = lottie.loadAnimation({
@@ -22,7 +22,7 @@ const HomePageAnimation2 = () => {
         };
     }, []);
 
-    return <div id="lottie-container-responsibility" style={{ width: '100%', height: '100%' }}></div>;
+    return <div id="lottie-container-total-reward-badge" style={{ width: '100%', height: '100%' }}></div>;
 };
 
-export default HomePageAnimation2;
+export default TotalRewardBadeAnimation;

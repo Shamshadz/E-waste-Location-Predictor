@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import PrivateRouter from "./Components/PrivateRoute";
+import Footer from "./Components/HomeFooter";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); //starting mei logged out ho user
@@ -36,12 +37,13 @@ function App() {
         <Route
           path="rewards"
           element={
-            
-              <Rewards></Rewards>
-          
+
+            <Rewards></Rewards>
+
           }
         />
       </Routes>
+      <Footer />
     </div>
   );
 }

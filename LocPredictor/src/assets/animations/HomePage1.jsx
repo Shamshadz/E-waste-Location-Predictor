@@ -5,7 +5,7 @@ import animationData from './homePage1.json'; // Replace with the path to your a
 const HomePageAnimation1 = () => {
     useEffect(() => {
         // Find the DOM element where you want to render the animation
-        const container = document.getElementById('lottie-container');
+        const container = document.getElementById('lottie-container-reward');
 
         // Initialize the Lottie animation
         const anim = lottie.loadAnimation({
@@ -22,7 +22,7 @@ const HomePageAnimation1 = () => {
         };
     }, []);
 
-    return <div id="lottie-container" style={{ width: '100%', height: '100%' }}></div>;
+    return <div id="lottie-container-reward" style={{ width: '100%', height: '100%' }}></div>;
 };
 
 export default HomePageAnimation1;

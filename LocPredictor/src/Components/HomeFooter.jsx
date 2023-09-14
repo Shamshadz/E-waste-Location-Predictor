@@ -9,7 +9,7 @@ const Footer = () => {
 
                 <div className="footer-left">
 
-                    <h3>Company<span>logo</span></h3>
+                    <h3>E-Waste<span>Hub</span></h3>
 
                     <p className="footer-links">
                         <a href="#" className="link-1">Home</a>
@@ -25,14 +25,14 @@ const Footer = () => {
                         <a href="#">Contact</a>
                     </p>
 
-                    <p className="footer-company-name">Company Name © 2015</p>
+                    <p className="footer-company-name">E-Waste Hub © 2023</p>
                 </div>
 
                 <div className="footer-center">
 
                     <div>
                         <i className="fa fa-map-marker"></i>
-                        <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+                        <p><span>Walchand college of Engg.</span> Sangli, Maharashtra</p>
                     </div>
 
                     <div>
@@ -42,7 +42,7 @@ const Footer = () => {
 
                     <div>
                         <i className="fa fa-envelope"></i>
-                        <p><a href="mailto:support@company.com">support@company.com</a></p>
+                        <p><a href="mailto:support@company.com">support@e-wastehub.com</a></p>
                     </div>
 
                 </div>

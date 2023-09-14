@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import coin from "../assets/coin.png";
+
 const Navbar = (props) => {
   let isLoggedIn = props.isLoggedIn;
   let setIsLoggedIn = props.setIsLoggedIn;
@@ -9,7 +10,7 @@ const Navbar = (props) => {
     <div className="text-white flex items-center w-11/12 max-w-[1160px] py-6 mx-auto justify-between">
       <Link to="/">
         {/* <img src={logo} alt="logo" width={160} height={32} loading="lazy"></img> */}
-        <div className="text-2xl font-semibold">LocPredictor</div>
+        <div className="text-2xl font-semibold">E-RECYCLE HUB..</div>
       </Link>
       <nav className="flex">
         <ul className="flex gap-10 text-richblack-100">
@@ -77,7 +78,7 @@ const Navbar = (props) => {
         )}
         {isLoggedIn && (
           <div>
-            <Link to="/rewards"><img src={coin}></img></Link>
+            <Link to="/reward"><img src={coin}></img></Link>
           </div>
         )}
       </div>
